@@ -7,6 +7,12 @@ import cmd from "../assets/win98icons/console_prompt-1.png";
 import emptyRecyclebin from "../assets/win98icons/recycle_bin_empty-1.png";
 import mydocs5 from "../assets/win98icons/directory_open_file_mydocs-5.png";
 import helpbooksmall from "../assets/win98icons/help_book_small-1.png";
+import calender from "../assets/win98icons/calendar-1.png"
+import file_window from "../assets/win98icons/file_windows-2.png"
+import world2 from "../assets/win98icons/world-2.png"
+import msagent2 from "../assets/win98icons/msagent-4.png"
+import networkcoll0 from "../assets/win98icons/network_cool_two_pcs-0.png"
+import RegistrationForm from "./RegistrationForm";
 
 
 export function DesktopItems(props)
@@ -18,6 +24,7 @@ export function DesktopItems(props)
     */}
     return(
         <>
+            <RegistrationForm />
             <div className="position-absolute bottom-0 end-0 text-center text-light fs-7 mb-4"
                 style={{textDecoration: "none"}}>
                     <div className="row row-cols-1 row-cols-md-1 g-0">
@@ -31,6 +38,69 @@ export function DesktopItems(props)
                             </div>
                         </div>
                     </div>
+            </div>
+            <div className="position-absolute bottom-0 start-0 text-center text-light fs-7 mb-4" style={{textDecoration: "none"}}>
+                 <div className="row row-cols-1 row-cols-md-1 g-0">
+                    <div className="col">
+                        <div className="card" style={{backgroundColor:"transparent",border: "none"}}>
+                            <div className="card-body">
+                                <a href="#" className="text-light" style={{textDecoration: "none",outline: "none",border: "none"}}><img
+                                        src={networkcoll0}
+                                        onClick={()=>showDiv('regiForm')} /><br/>College<br/>Login / Registraion</a><br/><br/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="position-absolute top-50 start-50 translate-middle text-center text-light fs-7 mb-4 centerIcons"
+                style={{textDecoration: "none"}}>
+                <div className="row row-cols-1 row-cols-md-1 g-0">
+                    <div className="col">
+                        <div className="card" style={{backgroundColor:"transparent",border: "none"}}>
+                            <div className="card-body">
+                                <div className="row row-cols-2 row-cols-md-4 g-0">
+                                    <div className="col">
+                                        <div className="card border-0" style={{backgroundColor: "transparent"}}>
+                                            <div className="card-body">
+                                                <a href="#" className="text-light" style={{textDecoration: "none",outline: "none",border: "none"}}><img
+                                                    src={file_window} /><br/> About us</a>
+                                            <br/><br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col">
+                                        <div className="card border-0" style={{backgroundColor: "transparent"}}>
+                                            <div className="card-body">
+                                                <a href="#" className="text-light" style={{textDecoration: "none",outline: "none",border: "none"}}><img
+                                                    src={world2}/><br/>Locate us</a>
+                                            <br/><br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col">
+                                        <div className="card border-0" style={{backgroundColor: "transparent"}}>
+                                            <div className="card-body">
+                                                <a href="#" className="text-light" style={{textDecoration: "none",outline: "none",border: "none"}}><img
+                                                    src={msagent2} /><br/>Rules</a>
+                                            <br/><br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col">
+                                        <div className="card border-0" style={{backgroundColor: "transparent"}}>
+                                            <div className="card-body">
+                                                <a href="#" className="text-light" style={{textDecoration: "none",outline: "none",border: "none"}}><img
+                                                    src={calender}/><br/>Schedule</a>
+                                            <br/><br/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <Applicatins />

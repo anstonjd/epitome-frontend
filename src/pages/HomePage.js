@@ -1,7 +1,7 @@
 import React from "react";
 
 import Wallpaper from "../components/Wallpaper";
-import Terminal from "../components/Terminal";
+import Terminal  from "../components/Terminal";
 
 
 
