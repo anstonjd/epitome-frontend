@@ -1,0 +1,42 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@700&display=swap');*/
+@font-face {
+    src: url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@700&display=swap");
+}
+
+
+.collegeFont{
+
+    font-family: 'Merriweather', serif;
+}
+
+.e1-epitome {
+    color: red !important;
+}
+
+.p-epitome {
+    color: orange !important
+}
+
+.i-epitome {
+    color: yellow !important
+}
+
+.t-epitome {
+    color: purple !important
+}
+
+.o-epitome {
+    color: #5EA5DD !important
+}
+
+.m-epitome {
+    color: rgb(33, 210, 33) !important
+}
+
+.e2-epitome {
+    color: lightblue !important
+}
+
+.epitome2k22 {
+    color: white !important;
+}
