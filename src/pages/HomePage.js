@@ -4,11 +4,12 @@ import Wallpaper from "../components/Wallpaper";
 import Terminal from "../components/Terminal";
 
 
+
 const HomePage = () => {
     return (
         <React.Fragment>
             <Wallpaper/>
-            <Terminal/>
+            <Terminal />
         </React.Fragment>
 
     )
