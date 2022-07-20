@@ -20,6 +20,9 @@ export function DesktopItems(props)
     {/*
         Foor Destop shortcuts
         needs more ooped
+        add this to layout
+        create components of these
+        
 
     */}
     return(
@@ -468,9 +471,9 @@ function Applicatins()
     );
 }
 
-function showDiv(id) {
+export function showDiv(id) {
     document.getElementById(id).style.display = "block";
 }
-function closeDiv(id) {
+export function closeDiv(id) {
     document.getElementById(id).style.display = "none";
 }

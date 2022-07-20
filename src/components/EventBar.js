@@ -5,13 +5,13 @@ import {useState} from 'react';
 export function EventBar(props)
 {
     props=props.details;
-    {/*  
+    /*  
 
     ooped EventBar used mostly for start menu
 
     improve the form for event
 
-    there might be a redundent design
+    Eventbar design is not dynamic 
 
 
     <EventBar  details={{eventName:"Event Name",
@@ -26,7 +26,7 @@ export function EventBar(props)
       } />
 
 
-        */}
+        */
 
     const [details,setDetails]=useState({
         eventName:props.eventName,

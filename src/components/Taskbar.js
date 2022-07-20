@@ -15,11 +15,18 @@ import gear1 from "../assets/win98icons/settings_gear-1.png";
 
 export function Taskbar()
 {
+    /*
+        glitched on click, unstable
+        the image win0 is making the glitch
+
+
+    */
     const showEventReg=(eventid)=>{
         document.getElementById(eventid).style.display = "block";
     }
     return(
             <>
+            <div className="">
             <div className="pt-1 pb-1 pe-1"
                 style={{
                     position: "absolute",
@@ -50,48 +57,48 @@ export function Taskbar()
                                     {/* <div style="position: fixed;bottom:0;transform: rotate(-90deg);" className="text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b className="text-light fs-6">Events</b></div> */}
                                 </div>
                                 <div className="col-md-10 p-1 col-10">
-                                    <li id="startButtons" className="mb-1"><a href="#" onClick={()=>showEventReg("001")}
+                                    <li id="startButtons" className="mb-1"><b href="#" onClick={()=>showEventReg("001")}
                                                                             className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
                                         src={searchcomp}/><span>&nbsp;Peeky
-                                Blinders</span></a></li>
-                                    <li id="startButtons" className="mb-1"><a href="#" onClick={()=>showEventReg("002")}
+                                Blinders</span></b></li>
+                                    <li id="startButtons" className="mb-1"><b href="#" onClick={()=>showEventReg("002")}
                                                                             className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
-                                        src={html2}/><span>&nbsp;Mosiac</span></a>
+                                        src={html2}/><span>&nbsp;Mosiac</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" onClick={()=>showEventReg("003")}
+                                    <li id="startButtons" className="mb-1"><b href="#" onClick={()=>showEventReg("003")}
                                                                             className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
                                         src={inputdev}/><span>&nbsp;Super
-                                Mario</span></a>
+                                Mario</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" className="btn rounded-0 p-0"
+                                    <li id="startButtons" className="mb-1"><b href="#" className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
-                                        src={keydelay}/><span>&nbsp;Abacus</span></a>
+                                        src={keydelay}/><span>&nbsp;Abacus</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" className="btn rounded-0 p-0"
+                                    <li id="startButtons" className="mb-1"><b href="#" className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
-                                        src={video1}/><span>&nbsp;Obscura</span></a>
+                                        src={video1}/><span>&nbsp;Obscura</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" className="btn rounded-0 p-0"
+                                    <li id="startButtons" className="mb-1"><b href="#" className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
-                                        src={paint}/><span>&nbsp;Pixar</span></a>
+                                        src={paint}/><span>&nbsp;Pixar</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" className="btn rounded-0 p-0"
+                                    <li id="startButtons" className="mb-1"><b href="#" className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
                                         src={searchdir}/><span>&nbsp;Takeshi's
-                                Castle</span></a>
+                                Castle</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" className="btn rounded-0 p-0"
+                                    <li id="startButtons" className="mb-1"><b href="#" className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
                                         src={video1}/><span>&nbsp;Boogie
-                                Voogie</span></a>
+                                Voogie</span></b>
                                     </li>
-                                    <li id="startButtons" className="mb-1"><a href="#" className="btn rounded-0 p-0"
+                                    <li id="startButtons" className="mb-1"><b href="#" className="btn rounded-0 p-0"
                                                                             style={{border: "none"}}><img
                                         src={frag0}/><span>&nbsp;Bell
-                                Bottom</span></a>
+                                Bottom</span></b>
                                     </li>
                                 </div>
                             </div>
@@ -120,6 +127,7 @@ export function Taskbar()
 
                     </div>
                 </div>
+            </div>
             </div>
         </>
     );

@@ -5,14 +5,14 @@ import RegistrationForm from "./RegistrationForm";
 export function FormElements()
 {
     const nav=useNavigate();
-    {/*
+    /*
         form must be improved a registration file must be created
         navigation must be improved
 
-    */}
+    */
     return(
         <>     
-        <RegistrationForm/>
+        
         <div className="row row-cols-1 row-cols-md-2 g-0" id="loginForm" style={{display: "block"}}>
                 <div className="col position-absolute top-50 start-50 translate-middle" style={{zIndex: 2,width: "500px"}}>
                     <div className="alert window rounded-0 ms-1 me-1">
@@ -91,6 +91,7 @@ export function FormElements()
                     </div>
                 </div>
             </div>
+            <RegistrationForm/>
         </>
 
     
@@ -103,7 +104,7 @@ export function FormElements()
 }
 
 function showRegForm() {
-    document.getElementById('loginForm').style.display = "none";
+    
     document.getElementById('regiForm').style.display = "block";
 }
 function HideEventReg() {
