@@ -13,7 +13,7 @@ const Wallpaper = () => {
                     <div className="col-md-1 col">
                         <div className="card align-items-center rounded-0 border-0"
                              style={{backgroundColor: "transparent"}}>
-                            <img src={logo} className="card-img-top imgLogo" alt="..."/>
+                            <img src={logo} className="card-img-top imgLogo" alt="..." />
                         </div>
                     </div>
                     <div className="col-md-11 col">

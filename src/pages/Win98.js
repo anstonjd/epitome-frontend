@@ -15,14 +15,12 @@ export function Win98()
         <>
             <Intro />
             <Wallpaper/>
-
+            <Taskbar />
             <DesktopItems />
-
-            
             <AllEvents />
             
             
-            <Taskbar />
+            
         </>
     );
 }

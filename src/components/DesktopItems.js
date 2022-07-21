@@ -26,7 +26,7 @@ export function DesktopItems(props)
 
     */}
     return(
-        <>
+        <div style={{fontSize:"12px"}}>
             <RegistrationForm />
             <div className="position-absolute bottom-0 end-0 text-center text-light fs-7 mb-4"
                 style={{textDecoration: "none"}}>
@@ -130,7 +130,7 @@ export function DesktopItems(props)
                         </div>
                     </div>
                 </div>
-            </>
+            </div>
     );
 }
 
