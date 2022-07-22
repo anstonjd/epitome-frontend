@@ -13,7 +13,7 @@ const RegistrationForm=()=>{
     const [details,setDetails]=useState({
         cname:"",
         collegeRep:"",
-        phone:91 ,
+        phone:"",
         email:"",
         username:"",
         password:"",

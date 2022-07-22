@@ -121,46 +121,7 @@ export function EventBar(props)
                                             ))}
                             </ol>
                             <hr/>
-                            <p className="fs-5 mb-2 "><b>Event Registration Form</b></p>
-                            <form className="row g-3 needs-validation" noValidate>
-                                <div className="col-md-4">
-                                    <label htmlFor="validationCustom01" className="form-label"
-                                           style={{fontSize: "small"}}>First
-                                        name</label>
-                                    <input type="text" className="form-control" id="validationCustom01" 
-                                        onChange={e=>setDetails({...details,firstName:e.target.value})} value={details.firstName}  required/>
-                                    <div className="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <label htmlFor="validationCustom02" className="form-label"
-                                           style={{fontSize: "small"}}>Last
-                                        name</label>
-                                    <input type="text" className="form-control" id="validationCustom02" 
-                                        onChange={e=>setDetails({...details,firstName:e.target.value})} value={details.surName}
-                                           required/>
-                                    <div className="valid-feedback">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <label htmlFor="validationCustomUsername" className="form-label"
-                                           style={{fontSize: "small"}}>Registraion Number</label>
-                                    <div className="input-group has-validation">
-                                        <input type="text" className="form-control" id="validationCustomUsername"
-                                               aria-describedby="inputGroupPrepend" onChange={e=>setDetails({...details,firstName:e.target.value})} value={details.regNo} required/>
-                                        <div className="invalid-feedback">
-                                            Please choose a username.
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div className="col-12 ">
-                                    <button style={{float: "right"}} type="submit"><b>Submit </b></button>
-                                </div>
-                            </form>
-
+                            
                         </div>
 
 
