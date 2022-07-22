@@ -15,7 +15,7 @@ export function Win98()
         <>
             <Intro />
             <Wallpaper/>
-            <Taskbar />
+            <Taskbar/>
             <DesktopItems />
             <AllEvents />
             

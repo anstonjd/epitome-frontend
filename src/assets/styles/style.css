@@ -428,11 +428,98 @@
     }
 }
 
+.inputFieldText{
+    min-height: 25px;
+    font-size: small;
+}
+
+.logoFont{
+    font-size: x-large;
+}
+.subLogoFont{
+    font-size: medium;
+}
+
+.imgLogo{
+    width: 80px;
+    height: auto;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'EPITOME 2K22';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+/* line css */
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 7% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 4.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+.text-copy:nth-child(6){
+    stroke: #e66c0e;
+    animation-delay: -5s;
+}
+/* ends here */
+
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+}
+
 @media (max-width: 767px) {
     .hidden-mobile {
         display: none;
     }
+
+    .logoFont{
+        font-size: small;
+    }
+    .subLogoFont{
+        font-size: x-small  ;
+    }
+    .imgLogo{
+        width: 60px;
+        height: auto;
+    }
+    .logoAlign{
+        margin-top: 100px;
+    }
+    .centerIcons{
+        margin-top: 120px;
+    }
 }
+
 
 .font {
     animation: font 7s step-end infinite;
@@ -501,8 +588,9 @@
 
     background-size: cover;
 }
-
-#startButtons:hover {
-    background-color: blue;
-    color: white;
+.mobileView{
+    padding-bottom: 48px;
+}
+body{
+    overflow: hidden;
 }

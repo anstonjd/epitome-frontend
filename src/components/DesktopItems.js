@@ -28,7 +28,7 @@ export function DesktopItems(props)
     return(
         <div style={{fontSize:"12px"}}>
             <RegistrationForm />
-            <div className="position-absolute bottom-0 end-0 text-center text-light fs-7 mb-4"
+            <div className="position-absolute bottom-0 end-0 text-center text-light fs-7 mb-lg-5 mobileView"
                 style={{textDecoration: "none"}}>
                     <div className="row row-cols-1 row-cols-md-1 g-0">
                         <div className="col">
@@ -42,7 +42,7 @@ export function DesktopItems(props)
                         </div>
                     </div>
             </div>
-            <div className="position-absolute bottom-0 start-0 text-center text-light fs-7 mb-4" style={{textDecoration: "none"}}>
+            <div className="position-absolute bottom-0 start-0 text-center text-light fs-7 mb-lg-5 mobileView" style={{textDecoration: "none"}}>
                  <div className="row row-cols-1 row-cols-md-1 g-0">
                     <div className="col">
                         <div className="card" style={{backgroundColor:"transparent",border: "none"}}>
@@ -312,7 +312,7 @@ function Applicatins()
             <div className="row row-cols-1 row-cols-md-1 g-0">
                 <div className="col col-md-5 rounded-0 position-absolute top-75 end-0 translate-middle-y"
                      id="terminalInst"
-                     style={{zIndex: 0, display: "block"}}>
+                     style={{zIndex: 0, display: "none"}}>
                     <div className="window">
                         <div className="title-bar">
                             <div className="title-bar-text"><img src={cmd}/><span
@@ -393,7 +393,7 @@ function Applicatins()
             </div>
 
 
-            <div className="row row-cols-1 row-cols-md-2 g-0" id="recycleBin" style={{display: "none"}}>
+            <div className="row row-cols-1 row-cols-md-2 g-0 " id="recycleBin" style={{display: "none"}}>
                 <div className="col position-absolute top-50 start-50 translate-middle" style={{zIndex: 2}}>
                     <div className="alert window rounded-0 ms-1 me-1">
                         {/* Add width style to specify the width of the componets abpve (remember u have to give for mobile as well) */}
