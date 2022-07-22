@@ -71,11 +71,11 @@ export function EventBar(props)
                                     <div className="window">
                                         <div className="window-body">
                                             <div style={{margin: "8px"}}>
-                                                <div className="row row-cols-1 row-cols-md-3 g-0 p-0 m-0" >
+                                                <div className="row g-0 p-0 m-0 me-4" >
                                                     <div className="col col-md-1">
                                                         <b style={{fontSize: "small"}}>A<u>d</u>dress</b>
                                                     </div>
-                                                    <div className="col" >
+                                                    <div className="col ms-2" >
                                                         <select>
                                                             <option
                                                                 style={{
